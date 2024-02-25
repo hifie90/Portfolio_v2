@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return(
-    <header className='fixed w-full px-[30px] lg:px-[100px] z-30 
+    <header className='fixed w-full px-[10px] lg:px-[60px] z-30 
     h-[100px] lg:h-[110px] flex items-center'>
       <div  className='flex flex-col lg:flex-row lg:items-center
       w-full justify-between'>
