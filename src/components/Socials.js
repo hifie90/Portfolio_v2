@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImFacebook,ImInstagram,ImTwitter,ImLinkedin,ImGithub} from 'react-icons/im'
+import {ImFacebook,ImInstagram,ImLinkedin,ImGithub} from 'react-icons/im'
 
 const Socials = () => {
   return <div className='hidden xl:flex ml-24'>

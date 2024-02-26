@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import Pic from '../img/contact/woman.png';
+import Pic from '../img/contact/contact.jpg';
+import { motion } from 'framer-motion';
+import { transition1 } from '../transitions';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +42,12 @@ const Contact = () => {
   };
 
   return (
-    <section className='section'>
+    <motion.section 
+    initial={{ opacity: 0, y:'100%' }}
+    animate={{ opacity: 1, y:0}}
+    exit={{ opacity: 0 , y:'100%'}}
+    transition={transition1} 
+    className='section'>
       <div className="container mx-auto h-full">
         <div className='flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left'>
           <div className='lg:flex-1 lg:pl-20 px-4'>
@@ -56,12 +63,17 @@ const Contact = () => {
             <button type="submit" className="btn mx-auto  mb-[30px] lg:max-0 self-start">Send It</button>
           </form>
         </div>
-        <div className='lg:flex-1'>
+        <motion.div
+         initial={{ opacity: 0, y:'100%' }}
+         animate={{ opacity: 1, y:0}}
+         exit={{ opacity: 0 , y:'100%'}}
+         transition={{transition: transition1, duration:1.5}} 
+         className='lg:flex-1'>
           <img src={Pic} alt=''></img>
-        </div>
+        </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
