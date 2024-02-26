@@ -69,7 +69,7 @@ const Contact = () => {
          exit={{ opacity: 0 , y:'100%'}}
          transition={{transition: transition1, duration:1.5}} 
          className='lg:flex-1'>
-          <img src={Pic} alt=''></img>
+         <img src={Pic} alt='' className='lg:p-20'></img>
         </motion.div>
         </div>
       </div>

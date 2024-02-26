@@ -33,11 +33,11 @@ const Home = () => {
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
               transition={transition1}
-              className='relative overflow-hidden lg:-right-30'>
+              className='relative overflow-hidden lg:pt-20 lg:mt-10 lg:-right-30 lg:pr-20'>
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 transition={transition1}
-                src={Photo} alt='' className='lg:h-[100vh]' />
+                src={Photo} alt='' className='lg:h-[75vh]' />
             </motion.div>
           </div>
         </div>

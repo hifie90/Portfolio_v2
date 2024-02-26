@@ -14,8 +14,8 @@ const About = () => {
   className='section'>
     <div className='container mx-auto h-full relative'>
       <div className='flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-20 lg:px-20'>
-        <div className='flex-1 max-h-96 lg:max-h-1/4 order-2 lg:order-none overflow-hidden'>
-          <img src={Photo} alt='' className='lg:ml-10 lg:w-80'/>
+       <div className='flex-1 max-h-96 lg:max-h-1/4 order-2 lg:mb-60 lg:order-none overflow-hidden'>
+          <img src={Photo} alt='' className='lg:ml-10 lg:w-90'/>
         </div>
         <motion.div
         initial={{ opacity: 0, y:'80%' }}
